@@ -5,3 +5,27 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
+
+# CUSTOM ALIASes
+alias g="git"
+alias gst="git status"
+alias gss="git status -s"
+alias gco="git checkout"
+alias ga="git add"
+alias gac="git add . && git commit -m"
+alias gcm="git commit -m"
+alias gb="git branch"
+alias gd="git diff"
+alias aliases="open $HOME/.aliases"
+alias omz="open $HOME/.oh-my-zsh"
+alias zsh="open $HOME/.zshrc"
+
+alias build="docker-compose up --build"
+alias console="docker-compose run app rails c"
+alias sql="docker-compose run app psql -h db -U exact \d == .tables"
+alias run="docker-compose run app"
+
+alias tag="./scripts/tag.sh"
+alias cop="./scripts/cop.sh"
+alias test="./scripts/test.sh"
+alias dbsetup="./scripts/setup_test_db.sh"
